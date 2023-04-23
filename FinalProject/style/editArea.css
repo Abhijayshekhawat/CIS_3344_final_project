@@ -1,0 +1,112 @@
+.editArea {
+    color: white;
+    background-color: #143C55;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0.25rem 0.25rem #444444;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+/* count padding as part of width for everything in .editArea */
+.editArea * {
+    box-sizing: border-box;
+}
+
+.editArea .row {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.editArea .row .prompt {
+    width: 40%;
+    margin: 1%;
+}
+
+.editArea .row input {
+    border-radius: 0.25rem;
+    width: 100%;
+    margin: 1%;
+}
+
+.editArea .row .select {
+    border-radius: 0.25rem;
+    width: 30%;
+    margin: auto;
+    text-align:left;
+}
+
+.editArea .row .radio {
+    border-radius: 0.25rem;
+    width: 10%;
+    margin: auto;
+}
+.editArea .radioForm {
+    width:80%;
+    margin: auto;
+}
+
+.editArea .row .radioChoice {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.editArea .row .error {
+    width: 98%;
+    margin: 0rem 1%;
+    color: #df2222;
+    font-weight: bold;
+}
+
+.editArea button {
+    margin: 0rem 0.5rem; /* first is top/bottom, second is left right */
+    width: 5rem;
+}
+
+.editArea .recLevelMsg {
+    font-weight: bold;
+}
+
+/* desktop only -- add media query to specify layout for desktop width */
+
+@media only screen and (min-width: 40rem) {
+
+    .editArea .row {
+        flex-direction: row;
+        margin-bottom: 0.5rem;
+    }
+    .editArea .row .select {
+        width: 20%;
+    }
+    .editArea .prompt {
+        width: 23%;
+    }
+    .editArea input {
+        width: 40%;
+        margin-left: 1%;
+    }
+    .editArea .radioFom .radio {
+        border-radius: 0.25rem;
+        width: 10%;
+        margin: auto;
+    }
+    .editArea .radioForm {
+        width: 100%;
+        margin: auto;
+    }
+    .editArea .row .radioChoice {
+        border-radius: 0.25rem;
+        width: 25%;
+        margin: auto;
+        text-align: center;
+    }
+    .editArea .error {
+        width: 38%;
+        margin-left: 1%;
+    }
+}

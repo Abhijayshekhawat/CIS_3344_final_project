@@ -1,0 +1,16 @@
+﻿.productList {
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin: 1rem;
+    color: white;
+}
+.productList .product {
+    background-color: #143C55;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+.productList img {
+    width: 20%;
+}

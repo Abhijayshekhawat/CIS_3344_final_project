@@ -1,0 +1,56 @@
+[
+  {
+    "nickname": "Princess",
+    "image": "pics/cats/pic1.png",
+    "birthYear": "2019",
+    "sex": "female"
+  },
+  {
+    "nickname": "Tipsy",
+    "image": "pics/cats/pic2.png",
+    "birthYear": "2018",
+    "sex": "male"
+  },
+  {
+    "nickname": "Dynamic Trio",
+    "image": "pics/cats/pic3.png",
+    "birthYear": "2020",
+    "sex": "male"
+  },
+  {
+    "nickname": "Star",
+    "image": "pics/cats/pic4.png",
+    "birthYear": "2018",
+    "sex": "female"
+  },
+  {
+    "nickname": "Tigger",
+    "image": "pics/cats/pic5.png",
+    "birthYear": "2017",
+    "sex": "male"
+  },
+  {
+    "nickname": "Super Sleuth",
+    "image": "pics/cats/pic6.png",
+    "birthYear": "2019",
+    "sex": "female"
+  },
+  {
+    "nickname": "Egghead",
+    "image": "pics/cats/pic7.png",
+    "birthYear": "2020",
+    "sex": "male"
+  },
+  {
+    "nickname": "Jeeves",
+    "image": "pics/cats/pic8.png",
+    "birthYear": "2019",
+    "sex": "male"
+  },
+  {
+    "nickname": "Tiny",
+    "image": "pics/cats/pic9.png",
+    "birthYear": "2020",
+    "sex": "female"
+  }
+]

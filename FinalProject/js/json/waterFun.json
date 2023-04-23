@@ -1,0 +1,33 @@
+[
+
+  {
+    "item": "Jet Ski",
+    "image": "pics/waterFun/jetski.jpg",
+    "price": "5000"
+  },
+  {
+    "item": "Kayak",
+    "image": "pics/waterFun/kayak.jpg",
+    "price": "1000"
+  },
+  {
+    "item": "Pontoon Boat",
+    "image": "pics/waterFun/pontoon.jpg",
+    "price": "30000"
+  },
+  {
+    "item": "Sailboat",
+    "image": "pics/waterFun/sail.jpg",
+    "price": "15000"
+  },
+  {
+    "item": "Ski Boat",
+    "image": "pics/waterFun/skiBoat.jpg",
+    "price": "50000"
+  },
+  {
+    "item": "Lake Vacation",
+    "image": "pics/waterFun/sunsetOnLake.jpg",
+    "price": "2000"
+  }
+]

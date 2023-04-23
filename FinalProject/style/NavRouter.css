@@ -1,0 +1,60 @@
+.NavRouter {
+    white-space: nowrap;
+    color:black;
+}
+.NavRouter a { 
+    text-decoration: none;   
+    color: white;
+    font-family: Verdana, sans-serif;
+    white-space: nowrap;
+}
+.NavRouter a:hover {
+    color: #A50E14;
+}
+.NavRouter .NavGroup {
+    position: relative;
+    margin-right: 0.1rem;
+    padding: 0.35rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.25rem;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    cursor: pointer;
+    color: white;
+}
+.NavRouter .NavGroup:hover {
+    color: #A50E14;
+}
+.NavRouter .SubMenu a { 
+    font-size: 0.75rem;
+    display: block; 
+    border-bottom: 1px solid  #AAAAAA;
+    color: black;
+}
+.NavRouter .SubMenu a:hover { 
+    color: #A50E14; 
+}
+.NavRouter .SubMenu {
+    letter-spacing: 0.05rem;
+    line-height: 1.25rem;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color:  #CCDDEE;
+    border-radius: 0.25rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.6);
+    transition: all 1s ease 0s;
+    position: absolute;
+    right: 0.75rem;
+    z-index: 3;
+}
+.NavRouter .show {
+    opacity: 1;
+    visibility: visible;
+}
+.NavRouter .hide {
+    opacity: 0;
+    visibility: hidden;
+}

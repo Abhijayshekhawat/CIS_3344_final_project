@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/more_icons/Computer.png" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/NavRouter.css" rel="stylesheet" type="text/css" />
+    <link href="style/product.css" rel="stylesheet" type="text/css" />
+    <link href="style/productList.css" rel="stylesheet" type="text/css" />
+    <link href="style/slideShow.css" rel="stylesheet" type="text/css" />
+    <link href="style/clickSort.css" rel="stylesheet" type="text/css" />
+    <link href="style/editArea.css" rel="stylesheet" type="text/css" />
+    <style>
+    </style>
+</head>
+<body>
+    <div id="titleNav">
+        <div id="title">
+            Inventory Management System
+        </div>
+        <div id="nav">
+
+        </div>
+    </div>
+    <div id="content">
+    </div>
+    <div id="footer">
+        Abhijay Shekhawat
+    </div>
+    <script>
+        "use strict";
+    </script>
+    <script src="js/content/blogContent.js"></script>
+    <script src="js/content/employeeContent.js"></script>
+    <script src="js/content/productContent.js"></script>
+    <script src="js/content/homeContent.js"></script>
+    <script src="js/content/registerContent.js"></script>
+    <script src="js/content/productListContent.js"></script>
+    <script src="js/content/slideShowContent.js"></script>
+    <script src="js/content/productCSContent.js"></script>
+    <script src="js/content/userCSContent.js"></script>
+    <script src="js/content/editAreaContent.js"></script>
+    <script src="js/reusable/ajax.js"></script>
+    <script src="js/reusable/MakeSlideShow.js"></script>
+    <script src="js/reusable/MakeEmployee.js"></script>
+    <script src="js/reusable/MakeNavRouter.js"></script>
+    <script src="js/reusable/MakeProduct.js"></script>
+    <script src="js/reusable/MakeProductList.js"></script>
+    <script src="js/reusable/MakeClickSort.js"></script>
+    <script src="js/reusable/MakeEditArea.js"></script>
+    <script src="js/reusable/MakeTag.js"></script>
+    <script src="js/reusable/MakeRadio.js"></script>
+    <script src="js/reusable/SortableTableUtils.js"></script>
+
+    <script>
+        "use strict";
+        // Home | Account | Search | Tutorial | Blog
+        var myNavList = [
+            // action attribute is a function name - no quotes around home.
+            { linkText: "Home", linkURL: "#/home", action: homeContent },
+            {
+                header: "Account",
+                subMenu: [
+                    // These links show up in nav bar but not functional because
+                    // no linkURL and action.
+                    { linkText: "Register", linkURL: "#/register", action: registerContent },
+                    { linkText: "Log In" },
+                    { linkText: "Log Out" },
+                    { linkText: "Profile" }
+                ]
+            },
+            {
+                header: "Search",
+                subMenu: [
+                    { linkText: "Make Objects" },
+                    { linkText: "Employees", linkURL: "#/employee", action: employeeContent },
+                    { linkText: "My Objects", linkURL: "#/product", action: productContent },
+                    { linkText: "My Object Lists", linkURL: "#/productList", action: productListContent },
+                    { linkText: "Slide Show", linkURL: "#/slideshow", action: slideShowContent },
+                    { linkText: "ClickSort Users", linkURL: "#/userscs", action: userCSContent },
+                    { linkText: "ClickSort Products", linkURL: "#/productscs", action: productCSContent },
+                    { linkText: "React", linkURL: "#/react", action: "ReactSite/reactIndex.html" },
+                    { linkText: "Edit Area", linkURL: "#/editarea", action: editAreaContent }
+                ]
+            },
+            {
+                header: "Tutorial",
+                subMenu: [
+                    { linkText: "Proposal", linkURL: "#/proposal", action: "tutorial/proposal.pdf" },
+                    { linkText: "Proof Of Concept", linkURL: "#/tutPOC", action: "tutorial/poc.html" },
+                    { linkText: "Demo", linkURL: "#/tutDemo", action: "tutorial/download/demo.html" },
+                    { linkText: "Tutorial Home", linkURL: "#/tutHome", action: "tutorial/index.html" }
+                ]
+            },
+            // action attribute is a function name - no quotes around blog.
+            { linkText: "Blog", linkURL: "#/blog", action: blogContent }
+        ];
+        var myNav = MakeNavRouter({
+            navId: "nav", // this is where the nav bar will be injected
+            navList: myNavList, // the list of link objects (linkText, linkURL, actions)
+            contentId: "content", // the id where content is to be injected
+            startLink: "#/home"     // routing will set this as the first link.
+        });
+    </script>
+</body>
+</html>

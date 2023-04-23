@@ -1,0 +1,35 @@
+﻿.product {
+    background-color: #143C55;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+    .product img {
+        width: 25%;
+        border-radius: 0.5rem;
+        box-shadow: 0.3rem 0.3rem 0.2rem rgba(0,0,0,0.8);
+    }
+
+    .product h3 {
+        background-color: lightgrey;
+        padding: 0.5rem;
+        margin: 0rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+    }
+
+    .product h4 {
+        background-color: lightgrey;
+        padding: 0.5rem;
+        margin: 0rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+    }

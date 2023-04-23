@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- https://www.pluralsight.com/guides/using-react-router-with-cdn-links -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icons/heart.png" />
+
+        <link href="style/commonStyle.css" rel="stylesheet" type="text/css" />
+        <link href="style/darkTitleStyle.css" rel="stylesheet" type="text/css" />
+        <link href="style/clickSort.css" rel="stylesheet" type="text/css" />
+        <link href="style/dropDown.css" rel="stylesheet" type="text/css" />
+
+        <!-- You need these two CDNs to use react, their version numbers must match -->
+        <!-- changed version on 10-20-2022 from 16.3.1 to 18 for react and react-dom -->
+        <script src='https://unpkg.com/react@18/umd/react.production.min.js'></script>
+        <script src='https://unpkg.com/react-dom@18/umd/react-dom.production.min.js'></script>
+
+        <!-- This next CDN lets you use JSX (looks like HTML tags in JS) -->
+        <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+
+        <!-- This lets you use React Routing -->
+        <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+
+
+    </head>
+    <body>
+        <div id='root'></div>
+
+        <script type="text/babel" src="js/reusable/ajax_alt.js"></script>
+        <script type="text/babel" src="js/reusable/dropDownFW.js"></script>
+        <script type="text/babel" src="js/reusable/filterObjList.js"></script>
+
+        <script type="text/babel" src="js/React/AjaxCarTable.js"></script>
+        <script type="text/babel" src="js/React/AjaxUserTable.js"></script>
+        <script type="text/babel" src="js/React/AjaxProductTable.js"></script>
+        <script type="text/babel" src="js/React/AjaxProductFilterTable.js"></script>
+        <script type="text/babel" src="js/React/ProductFilterTable.js"></script>
+        <script type="text/babel" src="js/React/ProductTable.js"></script>
+        <script type="text/babel" src="js/React/UserFilterTable.js"></script>
+        <script type="text/babel" src="js/React/UserTable.js"></script>
+
+        <script type="text/babel" src="js/React/Blog.js"></script>
+        <script type="text/babel" src="js/React/Home.js"></script>
+
+        <script type='text/babel'>
+
+                dropDownFW({
+                    dropHeaderStyle: "dropHeader",
+                    dropContentStyle: "dropContent",
+                    showStyle: "show",
+                    hideStyle: "hide"
+                });
+
+                const Link = ReactRouterDOM.Link;
+                const Route = ReactRouterDOM.Route;
+
+                const App = () => (
+                  <ReactRouterDOM.HashRouter>
+
+                      <div id="titleNav">
+
+                            <div id="pageTitle">
+                                Inventory Management System
+                            </div>
+                            <div id="nav">
+
+                                <div className="dropDown">
+                                    <Link to="/"><img title="Home" src="icons/dark/home_icon_H24.png" alt="Home" /></Link>
+                                </div>
+
+                                <div className="dropDown">
+                                    <img className="dropHeader" title="Search" src="icons/dark/search_dd_icon_H24.png" alt="Search" />
+                                    <div className="dropContent hide">
+                                        <Link to="/users">Users</Link> <br/>
+                                        <Link to="/cars">Cars</Link><br/>
+                                        <Link to="/products">Products</Link><br/>
+                                        <Link to="/filterproducts">Filter Products</Link><br/>
+                                    </div>
+                                </div>
+
+                                <div className="dropDown">
+                                    <Link to="/blog"><img  title="Blog" src="icons/dark/blog_icon_H24.png" alt="Blog" /></Link>
+                                </div>
+
+                            </div>
+                    </div>
+
+                    <div id="content">
+                        <Route path="/" exact component={Home} />
+                        <Route path="/users" component={AjaxUserTable} />
+                        <Route path="/cars" component={AjaxCarTable} />
+                        <Route path="/products" component={AjaxProductTable} />
+                        <Route path="/filterproducts" component={AjaxProductFilterTable} />
+                        <Route path="/blog" component={Blog} />
+                    </div>
+
+                    <div id="footer">
+                        [ Abhijay Shekhawat ]
+                    </div>
+
+                </ReactRouterDOM.HashRouter>
+            );
+
+
+            ReactDOM.render(<App />, document.getElementById('root'));
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+[
+    {
+        "make": "Audi",
+        "image": "pics/cars/white_audi.png",
+        "condition": "fair",
+        "price": "21000"
+    },
+  {
+    "make": "Disney",
+    "image": "pics/cars/pixar.png",
+    "condition": "superb",
+    "price": "50000"
+  },
+  {
+    "make": "Buick",
+    "image": "pics/cars/buick.png",
+    "condition": "great",
+    "price": "15000"
+  },
+  {
+    "make": "Ford",
+    "image": "pics/cars/ford.png",
+    "condition": "poor",
+    "price": "5000"
+  },
+  {
+    "make": "Audi (Black)",
+    "image": "pics/cars/black_audi.png",
+    "condition": "poor",
+    "price": "5000"
+  },
+  {
+    "make": "Audi (Blue)",
+    "image": "pics/cars/blue_audi.png",
+    "condition": "poor",
+    "price": "5000"
+  },
+  {
+    "make": "Beamer",
+    "image": "pics/cars/bmw.png",
+    "condition": "poor",
+    "price": "5000"
+  },
+  {
+    "make": "Mercedes",
+    "image": "pics/cars/mercedes.png",
+    "condition": "poor",
+    "price": "5000"
+  },
+  {
+    "make": "Ford (Model T)",
+    "image": "pics/cars/model_t.png",
+    "condition": "poor",
+    "price": "5000"
+  },
+  {
+    "make": "Audi (Yellow)",
+    "image": "pics/cars/yellow_audi.png",
+    "condition": "poor",
+    "price": "5000"
+  }
+]
